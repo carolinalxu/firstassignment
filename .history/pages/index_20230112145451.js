@@ -22,7 +22,7 @@ export default function Home() {
 
     if(formData.username !== null) {
       router.push({
-        pathname: './counter',
+        pathname = './counter',
         query: {
           username: formData.username
         }
@@ -59,7 +59,6 @@ export default function Home() {
         required
         minLength="5"
         maxLength="10"
-        onChange={(e => setFormData({...formData,username: e.target.value}))}
         />
 
         <button type="submit" onClick={() => CheckLogin()}> Submit</button>
